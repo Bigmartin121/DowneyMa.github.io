@@ -1,9 +1,205 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Page-1" id="M3fOXB-vVE9ZEZqiWJpD">
-    <mxGraphModel>
+    <mxGraphModel dx="1514" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-1" value="内容替换规则" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="184" y="1031" width="1213" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-2" value="文件操作流程" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="749" width="950" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-3" value="开始" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="709" y="20" width="92" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-4" value="输入参数：模块名、页面名" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="629" y="124" width="252" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-5" value="检查模块是否存在?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="661" y="228" width="188" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-6" value="检查模板文件存在?" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="544" y="488" width="188" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-7" target="WlvBAUWT3JJ3bn6yN0kF-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1750" y="515" />
+              <mxPoint x="1750" y="1450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-7" value="报错: 模块不存在" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="810" y="488" width="183" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-8" value="复制模板文件到目标模块" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="774" width="236" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-9" target="WlvBAUWT3JJ3bn6yN0kF-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="801" />
+              <mxPoint x="1650" y="1450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-9" value="报错: 模板文件缺失" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="774" width="199" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-10" value="重命名文件结构" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="890" width="172" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-11" value="替换文件内容" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1013" y="1056" width="156" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-12" value="更新路由配置" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1432" y="1172" width="156" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-13" value="生成单元测试模板" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1416" y="1313" width="188" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-15" value="创建 views/页面名_view.dart" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="878" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-16" value="创建 controllers/页面名_controller.dart" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="365" y="878" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-17" value="创建 bindings/页面名_binding.dart" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="675" y="878" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-18" value="替换类名为 页面名View" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="219" y="1172" width="227" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-19" value="替换类名为 页面名Controller" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="496" y="1160" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-20" value="替换类名为 页面名Binding" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="806" y="1172" width="245" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-21" value="添加新路由到 app_pages.dart" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1102" y="1160" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-3" target="WlvBAUWT3JJ3bn6yN0kF-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-4" target="WlvBAUWT3JJ3bn6yN0kF-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-24" value="存在" style="curved=1;startArrow=none;endArrow=block;exitX=0.05;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-5" target="WlvBAUWT3JJ3bn6yN0kF-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="638" y="452" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-25" value="不存在" style="curved=1;startArrow=none;endArrow=block;exitX=0.95;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-5" target="WlvBAUWT3JJ3bn6yN0kF-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="873" y="452" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-26" value="存在" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.94;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-6" target="WlvBAUWT3JJ3bn6yN0kF-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="488" y="713" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-27" value="不存在" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.64;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-6" target="WlvBAUWT3JJ3bn6yN0kF-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1104" y="713" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.78;entryX=0;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-8" target="WlvBAUWT3JJ3bn6yN0kF-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="888" y="853" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-29" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-10" target="WlvBAUWT3JJ3bn6yN0kF-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-30" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.83;entryX=0;entryY=0.01;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-11" target="WlvBAUWT3JJ3bn6yN0kF-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1319" y="1135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-31" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-12" target="WlvBAUWT3JJ3bn6yN0kF-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-32" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1510" y="1417" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-33" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.87;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-8" target="WlvBAUWT3JJ3bn6yN0kF-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="853" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-34" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.52;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-8" target="WlvBAUWT3JJ3bn6yN0kF-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="495" y="853" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-35" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.85;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-8" target="WlvBAUWT3JJ3bn6yN0kF-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="805" y="853" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-36" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.59;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-11" target="WlvBAUWT3JJ3bn6yN0kF-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="333" y="1135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-37" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.66;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-11" target="WlvBAUWT3JJ3bn6yN0kF-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="626" y="1135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-38" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.96;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-11" target="WlvBAUWT3JJ3bn6yN0kF-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="929" y="1135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-39" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.97;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="WlvBAUWT3JJ3bn6yN0kF-11" target="WlvBAUWT3JJ3bn6yN0kF-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1232" y="1135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WlvBAUWT3JJ3bn6yN0kF-40" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="1420" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
